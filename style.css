@@ -1,28 +1,57 @@
 @import url("http://fonts.googleapis.com/css?family=Silkscreen");
 
-* {
-  font-family: "Silkscreen";
-  font-size: 15px;
+body {
+  margin: 0;
+  padding: 0;
+  background: url(https://wallpapers.com/images/hd/emerald-green-pokemon-game-map-9wtwfltdysyaa91k.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-h1{
-        font-size: 30px;
+* {
+  font-family: "Silkscreen";
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
 }
 
 form {
-  max-width: 300px;
+  max-width: 320px;
   border: 3px solid black;
-  padding: 20px;
-  margin: 70px;
-
+  border-radius: 5px;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 input,
 textarea {
   box-sizing: border-box;
   width: 100%;
-  padding: 10px;
+  padding: 0.8rem;
   border: 2px solid black;
-  margin-bottom: 25px;
   border-radius: 5px;
+}
+
+.button {
+  font-weight: bold;
+}
+
+.button:hover {
+  cursor: pointer;
 }
